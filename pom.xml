@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.xin.jump</groupId>
+    <artifactId>sring-cloud</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>spring-cloud</name>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.9.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <lombok.version>1.18.2</lombok.version>
+        <spring-cloud-netflix-eureka-server.version>1.4.5.RELEASE</spring-cloud-netflix-eureka-server.version>
+    </properties>
+
+    <modules>
+        <!-- 注册中心 -->
+        <module>microservice-discovery-eureka</module>
+        <module>microservice-discovery-eureka-ha</module>
+        <module>microservice-discovery-eureka-authenticating</module>
+
+        <!-- 提供者 -->
+        <module>microservice-provider-user</module>
+        <module>microservice-provider-user-authenticating</module>
+
+        <!-- 消费者 -->
+        <module>microservice-consumer-movie</module>
+    </modules>
+
+    <dependencies>
+        <!-- add Lombok 依赖 -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>

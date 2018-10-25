@@ -7,11 +7,12 @@
 		<artifactId>sring-cloud</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>microservice-provider-user</artifactId>
+	<groupId>com.xin.jump</groupId>
+	<artifactId>microservice-provider-user-authenticating</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>microservice-provider-user</name>
+	<name>microservice-provider-user-authenticating</name>
 	<description>Demo project for Spring Boot</description>
 
 	<dependencies>
@@ -59,6 +60,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<finalName>microservice-provider-user</finalName>
+		<finalName>microservice-provider-user-authenticating</finalName>
 	</build>
 </project>

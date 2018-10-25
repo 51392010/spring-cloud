@@ -1,0 +1,15 @@
+server:
+  port: 8010
+
+eureka:
+  client:
+    # 设置与Eureka Server的交互地址，多个地址间可以用逗号隔开
+    serviceUrl:
+     defaultZone: http://localhost:8761/eureka/
+  instance:
+  # 将自己的IP注册到Eureka Server
+    prefer-ip-address: true
+
+spring:
+  application:
+    name: microservice-consumer-movie
