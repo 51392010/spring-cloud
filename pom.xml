@@ -32,6 +32,7 @@
         <!-- 提供者 -->
         <module>microservice-provider-user</module>
         <module>microservice-provider-user-authenticating</module>
+        <module>microservice-provider-user-my-metadata</module>
 
         <!-- 消费者 -->
         <module>microservice-consumer-movie</module>

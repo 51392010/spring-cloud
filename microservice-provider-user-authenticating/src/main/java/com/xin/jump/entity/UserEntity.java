@@ -24,4 +24,5 @@ public class UserEntity {
 
     @Column(length = 64, name = "BALANCE")
     private BigDecimal balance;
+
 }
