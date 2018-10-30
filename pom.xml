@@ -29,13 +29,16 @@
         <module>microservice-discovery-eureka-ha</module>
         <module>microservice-discovery-eureka-authenticating</module>
 
-        <!-- 提供者 -->
+        <!-- API接口提供方 -->
         <module>microservice-provider-user</module>
         <module>microservice-provider-user-authenticating</module>
         <module>microservice-provider-user-my-metadata</module>
+        <module>microservice-provider-user-ip</module>
 
-        <!-- 消费者 -->
+        <!-- API服务调用方 -->
         <module>microservice-consumer-movie</module>
+        <module>microservice-consumer-movie-ribbon</module>
+        <module>microservice-consumer-movie-understanding-metadata</module>
     </modules>
 
     <dependencies>
@@ -47,6 +50,19 @@
         </dependency>
     </dependencies>
 
+    <!-- 引入spring cloud的依赖 -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Edgware.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <build>
         <plugins>
             <plugin>
@@ -54,5 +70,6 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+        <finalName>spring-cloud</finalName>
     </build>
 </project>

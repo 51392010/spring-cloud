@@ -7,7 +7,6 @@
 		<artifactId>sring-cloud</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>com.xin.jump</groupId>
 	<artifactId>microservice-provider-user-authenticating</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -40,16 +39,6 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-			<version>1.4.5.RELEASE</version>
-		</dependency>
-
-		<!-- 引入spring cloud的依赖 -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-dependencies</artifactId>
-			<version>Edgware.RELEASE</version>
-			<type>pom</type>
-			<scope>import</scope>
 		</dependency>
 	</dependencies>
 

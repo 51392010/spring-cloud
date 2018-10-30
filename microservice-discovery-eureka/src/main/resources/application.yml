@@ -3,7 +3,8 @@ server:
 
 eureka:
   client:
-    # 是否将自己注册到Eureka Server上
+    # 是否开启健康检查
+    # 是否将自己注册到Eun reka Server上
     register-with-eureka: false
     # 是否从Eureka Server获取注册信息
     fetch-registry: false
@@ -13,4 +14,4 @@ eureka:
 
 spring:
   application:
-    name: microservice-discovery-eureka
+    name: microservice-discovery-eureka；

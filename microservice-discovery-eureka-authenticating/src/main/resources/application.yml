@@ -1,5 +1,8 @@
 server:
-  port: 8761 # \u6307\u5B9A\u8BE5Eureka\u5B9E\u4F8B\u7684\u7AEF\u53E3
+  port: 8761
+spring:
+  application:
+    name: microservice-discovery-eureka-authenticating
 eureka:
   client:
     # 是否将自己注册到Eureka Server上
@@ -15,6 +18,3 @@ security:
   user:
     name: user # 配置登录的账号是user
     password: 123 # 配置登录的密码是123
-spring:
-  application:
-    name: microservice-discovery-eureka-authenticating

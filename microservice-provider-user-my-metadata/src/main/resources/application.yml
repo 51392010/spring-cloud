@@ -1,21 +1,21 @@
 server:
-  port: 8000
+  port: 8003
 spring:
   application:
-    name: microservice-provider-user-my-metadata
+    name: microservice-provider-user
   jpa:
     generate-ddl: false
     show-sql: true
     hibernate:
       ddl-auto: none
-    # \u914D\u7F6Emysql\u6570\u636E\u6E90
+    # 配置Mysql数据源
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/data?useUnicode=true&characterEncoding=utf-8
     username: root
     password: 123
 
-logging:                                # \u914D\u7F6E\u65E5\u5FD7\u7EA7\u522B\uFF0C\u8BA9hibernate\u6253\u5370\u51FA\u6267\u884C\u7684SQL
+logging:                                 # 配置日志级别，让hibernate打印出执行的SQL
   level:
     root: INFO
     org.hibernate: INFO
@@ -28,4 +28,4 @@ eureka:
   instance:
     prefer-ip-address: true
     metadata-map:
-      my-metadata: \u6211\u81EA\u5B9A\u4E49\u7684\u5143\u6570\u636E       # \u81EA\u5B9A\u4E49\u7684\u5143\u6570\u636E\uFF0Ckey/value\u90FD\u53EF\u4EE5\u968F\u4FBF\u5199\u3002
+      my-metadata: 我自定义的元数据       # 自定义的元数据，key/value都可以随便写。
