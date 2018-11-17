@@ -10,7 +10,7 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 @SpringBootApplication
 public class MicroserviceConsumerMovieFeignCustomizingApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(MicroserviceConsumerMovieFeignCustomizingApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(MicroserviceConsumerMovieFeignCustomizingApplication.class, args);
+    }
 }

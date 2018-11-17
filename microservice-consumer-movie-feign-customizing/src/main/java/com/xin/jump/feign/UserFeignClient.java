@@ -16,13 +16,13 @@ import org.springframework.cloud.netflix.feign.FeignClient;
 public interface UserFeignClient {
 
     /**
+     * @return com.xin.jump.entity.User
      * @author wangxin
      * @description 使用feign自带的注解@RequestLine
      * @date 2018/11/14 22:33
      * @ses https://github.com/OpenFeign/feign
      * @params [id]
-     * @return com.xin.jump.entity.User
      */
-    @RequestLine(value = "GET /{id}")
+    @RequestLine("GET /{id}")
     User findById(@Param("id") String id);
 }

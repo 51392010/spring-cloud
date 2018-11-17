@@ -9,20 +9,20 @@
     <name>spring-cloud</name>
 
     <!-- 项目部署至私服 -->
-    <distributionManagement>
-        <!-- 部署项目产生的构件到远程仓库需要的信息 -->
+    <!--<distributionManagement>
+        &lt;!&ndash; 部署项目产生的构件到远程仓库需要的信息 &ndash;&gt;
         <repository>
             <id>releases</id>
             <name>Nexus Release Repository</name>
             <url>http://127.0.0.1:8081/nexus/content/repositories/releases/</url>
         </repository>
-        <!-- 如果没有配置该元素，默认部署到repository元素配置的仓库 -->
+        &lt;!&ndash; 如果没有配置该元素，默认部署到repository元素配置的仓库 &ndash;&gt;
         <snapshotRepository>
             <id>snapshots</id>
             <name>Nexus Snapshot Repository</name>
             <url>http://127.0.0.1:8081/nexus/content/repositories/snapshots/</url>
         </snapshotRepository>
-    </distributionManagement>
+    </distributionManagement>-->
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -52,6 +52,7 @@
         <module>microservice-provider-user-authenticating</module>
         <module>microservice-provider-user-my-metadata</module>
         <module>microservice-provider-user-ip</module>
+        <module>microservice-provider-user-with-auth</module>
 
         <!-- API服务调用方 -->
         <module>microservice-consumer-movie</module>
