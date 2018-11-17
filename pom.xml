@@ -44,6 +44,8 @@
         <module>microservice-discovery-eureka</module>
         <module>microservice-discovery-eureka-ha</module>
         <module>microservice-discovery-eureka-authenticating</module>
+        <!-- Ribbon -->
+        <module>microservice-consumer-movie-without-eureka</module>
 
         <!-- API接口提供方 -->
         <module>microservice-provider-user</module>
@@ -57,6 +59,8 @@
         <module>microservice-consumer-movie-ribbon</module>
         <module>microservice-consumer-movie-ribbon-customizing</module>
         <module>microservice-consumer-movie-ribbon-customizing-properties</module>
+        <module>microservice-consumer-movie-feign</module>
+        <module>microservice-consumer-movie-feign-customizing</module>
     </modules>
 
     <dependencies>

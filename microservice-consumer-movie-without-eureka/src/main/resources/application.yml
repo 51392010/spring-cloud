@@ -1,0 +1,14 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: microservice-consumer-movie-without-eureka
+microservice-provider-user:
+  ribbon:
+    listOfServers: localhost:8000,localhost:8003
+
+# Ribbon\u9965\u997F\u5F0F\u52A0\u8F7D
+#ribbon:
+#  eager-load:
+#    enabled: true
+#    clients: microservice-provider-user
