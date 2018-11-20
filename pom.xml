@@ -53,6 +53,7 @@
         <module>microservice-provider-user-my-metadata</module>
         <module>microservice-provider-user-ip</module>
         <module>microservice-provider-user-with-auth</module>
+        <module>microservice-provider-user-multiple-params</module>
 
         <!-- API服务调用方 -->
         <module>microservice-consumer-movie</module>
@@ -62,6 +63,9 @@
         <module>microservice-consumer-movie-ribbon-customizing-properties</module>
         <module>microservice-consumer-movie-feign</module>
         <module>microservice-consumer-movie-feign-customizing</module>
+        <module>microservice-consumer-movie-feign-manual</module>
+        <module>microservice-consumer-movie-feign-logging</module>
+        <module>microservice-consumer-movie-feign-multiple-params</module>
     </modules>
 
     <dependencies>
