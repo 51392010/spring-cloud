@@ -23,8 +23,12 @@ public class UserController {
     }
 
     @PostMapping("/post")
-    public UserEntity post0(@RequestBody UserEntity userEntity) {
+    public UserEntity post(@RequestBody UserEntity userEntity) {
         return userRespoitory.findOne(userEntity.getId());
     }
 
+    @PostMapping("/upload")
+    public String handleFileUpload() {
+        return "成功";
+    }
 }
