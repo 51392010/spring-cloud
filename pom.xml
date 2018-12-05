@@ -79,6 +79,8 @@
 
         <!-- Zuul 网关 -->
         <module>microservice-gateway-zuul</module>
+        <module>microservice-gateway-zuul-filter</module>
+        <module>microservice-gateway-zuul-fallback</module>
     </modules>
 
     <dependencies>
