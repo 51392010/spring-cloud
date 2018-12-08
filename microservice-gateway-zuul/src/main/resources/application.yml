@@ -12,3 +12,12 @@ eureka:
 management:
   security:
     enabled: false
+
+# 设置Hystrix隔离策略，默认是semaphore
+zuul:
+  ribbon-isolation-strategy: thread
+  # 让每个路由使用独立的线程池
+  thread-pool:
+    use-separate-thread-pools: true
+    # 为thread-pool-key添加前缀，如访问者是microservice-provider-user，添加之后thread-pool就会变成hh-microservice-provider-user
+    thread-pool-key-prefix: hh-
