@@ -71,21 +71,20 @@
         <module>microservice-consumer-movie-feign-hystrix-fallback-factory</module>
         <module>microservice-consumer-movie-feign-hystrix-fallback-stream</module>
         <module>microservice-consumer-movie-ribbon-hystrix-turbine-mq</module>
+        <module>microservice-hystrix-turbine</module>
         <module>microservice-hystrix-turbine-mq</module>
+        <module>microservice-file-upload</module>
+        <module>microservice-sidecar</module>
+        <module>microservice-sidecar-client-ribbon</module>
 
         <!-- Hystrix 图形化监控 -->
         <module>microservice-hystrix-dashboard</module>
-        <module>microservice-hystrix-turbine</module>
 
         <!-- Zuul 网关 -->
         <module>microservice-gateway-zuul</module>
         <module>microservice-gateway-zuul-filter</module>
         <module>microservice-gateway-zuul-fallback</module>
-        <module>microservice-sidecar</module>
         <module>microservice-gateway-zuul-aggregation</module>
-
-        <!-- 文件上传 -->
-        <module>microservice-file-upload</module>
     </modules>
 
     <dependencies>
