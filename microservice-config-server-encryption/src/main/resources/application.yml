@@ -8,5 +8,5 @@ spring:
       server:
         git:
           uri: https://gitee.com/xinjump/spring-cloud-config-repo      # \u914D\u7F6EGit\u4ED3\u5E93\u7684\u5730\u5740
-          username: 15034336747                                       # Git\u4ED3\u5E93\u7684\u8D26\u53F7
-          password: wx141031                                          # Git\u4ED3\u5E93\u7684\u5BC6\u7801
+          username:                                        # Git\u4ED3\u5E93\u7684\u8D26\u53F7
+          password:                                           # Git\u4ED3\u5E93\u7684\u5BC6\u7801
