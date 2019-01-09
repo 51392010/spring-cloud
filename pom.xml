@@ -98,10 +98,12 @@
         <module>microservice-config-client-authenticating</module>
         <module>microservice-config-server-eureka-authenticating</module>
         <module>microservice-config-client-eureka-authenticating</module>
+        <module>microservice-config-client-refresh-cloud-bus</module>
 
         <!-- Spring Cloud Sleuth -->
         <module>microservice-simple-provider-user</module>
         <module>microservice-simple-provider-user-trace</module>
+        <module>microservice-simple-provider-user-trace-elk</module>
     </modules>
 
     <dependencies>
