@@ -104,6 +104,8 @@
         <module>microservice-simple-provider-user</module>
         <module>microservice-simple-provider-user-trace</module>
         <module>microservice-simple-provider-user-trace-elk</module>
+        <!-- Zipkin -->
+        <module>microservice-trace-zipkin-server</module>
     </modules>
 
     <dependencies>
