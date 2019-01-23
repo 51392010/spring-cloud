@@ -14,4 +14,4 @@ eureka:
 
 spring:
   application:
-    name: microservice-discovery-eureka；
+    name: microservice-discovery-eureka
