@@ -37,6 +37,8 @@
         <java.version>1.8</java.version>
         <lombok.version>1.18.2</lombok.version>
         <spring-cloud-netflix-eureka-server.version>1.4.5.RELEASE</spring-cloud-netflix-eureka-server.version>
+        <zipkin-autoconfigure-collector-rabbitmq.version>2.3.1</zipkin-autoconfigure-collector-rabbitmq.version>
+        <zipkin-autoconfigure-storage-elasticsearch-http.version>2.3.1</zipkin-autoconfigure-storage-elasticsearch-http.version>
     </properties>
 
     <modules>
@@ -111,6 +113,9 @@
         <module>microservice-provider-user-zipkin</module>
         <module>microservice-simple-consumer-movie-trace</module>
         <module>microservice-trace-zipkin-server-eureka</module>
+        <module>microservice-trace-zipkin-server-stream</module>
+        <module>microservice-simple-provider-user-trace-zipkin-stream</module>
+        <module>microservice-trace-zipkin-server-stream-elasticsearch</module>
     </modules>
 
     <dependencies>
