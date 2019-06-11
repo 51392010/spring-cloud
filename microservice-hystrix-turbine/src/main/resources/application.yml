@@ -10,6 +10,6 @@ eureka:
   instance:
     prefer-ip-address: true
 turbine:
-  # \u8BA9turbine\u80FD\u591F\u627E\u5230\u4EE5\u4E0B\u4E24\u4E2A\u670D\u52A1\uFF0C\u5E76\u6574\u5408\u5B83\u4EEC\u7684\u76D1\u63A7\u6570\u636E
+  # 让turbine能够找到以下两个服务，并整合它们的监控数据
   app-config: microservice-consumer-movie-ribbon-hystrix,microservice-consumer-movie-feign-hystrix-fallback-stream
   clusterNameExpression: "'default'"
